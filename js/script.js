@@ -176,11 +176,15 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
-$(document).ready(function() {
-    $('.menu__burger').click(function(event) {
-        $('.menu__burger, .menu__body').toggleClass('active')
-        $('body').toggleClass('lock')
-    })
+$(document).ready(function () {
+	$('.menu__burger').click(function (event) {
+		$('.menu__burger, .menu__body').toggleClass('active')
+		$('body').toggleClass('lock')
+	})
+	$('.menu__link').click(function (event) {
+		$('.menu__burger, .menu__body').toggleClass('active')
+		$('body').toggleClass('lock')
+	})
 })
 $(document).ready(() => {
 	$('.menu-tabs__tab').click((element) => {
